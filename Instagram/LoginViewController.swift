@@ -37,7 +37,6 @@ class LoginViewController: UIViewController {
         let user = PFUser()
         user.username = usernameField.text
         user.password = passwordField.text
-        user.email = "email@example.com"
         
         user.signUpInBackground{(success, error) in
             if success {
